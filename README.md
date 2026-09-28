@@ -7,7 +7,7 @@ Backend system for movie management, user rating analysis and personalized recom
 * Database Connection: JDBC
 * Database Tools: SQL Server Management Studio 22
 
-
+## Key Features & Implementation
 * **Data Access Layer (Java / JDBC):** Implemented interface methods using JDBC with explicit transaction handling (`commit`/`rollback`) to maintain data integrity.
 * **Automated Trend Tracking (T-SQL Triggers):** Database triggers (`TR_UPDATE_MOVIE_TREND`) automatically track and update movie status (*Trending, Rising, Falling, Classic*) on every rating change.
 * **Business Rule Validation (T-SQL Triggers):** Trigger mechanism (`TR_BLOCK_EXTREME`) to prevent extreme rating abuse (1 or 10) based on user activity history within specific genres.
